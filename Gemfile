@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.2.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
@@ -26,14 +26,15 @@ gem 'jbuilder', '~> 2.5'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap', '~> 4.0.0.alpha2'
-source 'https://rails-assets.org' do
+source 'http://insecure.rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
 gem 'httparty'
 
 # Use ActiveModel has_secure_password
 # use platforms: [:ruby] to make it work for windows
-gem 'bcrypt', platforms: [:ruby]
+#gem 'bcrypt', platforms: [:ruby]
+gem 'bcrypt','~>3.1.11'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
